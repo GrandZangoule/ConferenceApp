@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyConference.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MyConference.Pages">
+
+    <!--FlyoutBackground="{AppThemeBinding Light=White, Dark=#322422}"
+              Padding="{OnPlatform iOS='0,1,0,1', Default='0,1,0,1'}">-->
+
+    <!--<Shell.FlyoutBackground>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="{AppThemeBinding Light=#71026f, Dark=#7fffd4}"
+                          Offset="0.1" />
+            <GradientStop Color="{AppThemeBinding Light=#E94057, Dark=#c6172f}"
+                          Offset="0.6" />
+            <GradientStop Color="{AppThemeBinding Light=#f38039, Dark=#d3580d}"
+                          Offset="1.6" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>-->
+
+    <Shell.FlyoutBackground>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="{AppThemeBinding Light=White, Dark=#71026f, Default=#8A7387}"
+                          Offset="0.1" />
+            <GradientStop Color="{AppThemeBinding Light=Whitesmoke, Dark=#E94057, Default=#f7ae81}"
+                          Offset="0.6" />
+            <GradientStop Color="{AppThemeBinding Light=#7fffd4, Dark=#f38039, Default=#7fffd4}"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="Aquamarine"
+              HeightRequest="5"
+              Padding="0,0">
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Grid BackgroundColor="Aquamarine"
+              HeightRequest="{OnPlatform iOS=52, Default=34}"
+              Padding="{OnPlatform iOS='0,5,0,25', Default='0,5,0,5'}">
+            <Label Text="Copyright © 2022 => Green Mantis. PROEVDIST"
+                   FontSize="Small"
+                   TextColor="Black"
+                   BackgroundColor="{AppThemeBinding Light=Aquamarine, Dark=Aquamarine, Default=Aquamarine}"
+                   HorizontalOptions="Center"/>
+        </Grid>
+    </Shell.FlyoutFooter>
+
+
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="{StaticResource Tertiary}" Offset="-.1"/>
+            <GradientStop Color="{StaticResource Primary}" Offset="0.08"/>
+            <GradientStop Color="#8A2387" Offset="0.6"/>
+            <GradientStop Color="Aquamarine" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
+
+    <FlyoutItem Title="My Schedule" Icon="tab_schedule.png">
+        
+        <Tab Title="Schedule" Icon="tab_schedule.png">
+            
+            <ShellContent
+                Title="Day 1" Icon="algolia.png"
+                ContentTemplate="{DataTemplate pages:ScheduleDay1Page}"
+                Route="ScheduleDay1Page" />
+            <ShellContent
+                Title="Day 2" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:ScheduleDay2Page}"
+                Route="ScheduleDay2Page" />
+            <ShellContent
+                Title="Day 3" Icon="atlassian.png"
+                ContentTemplate="{DataTemplate pages:ScheduleDay3Page}"
+                Route="ScheduleDay3Page" />
+        </Tab>
+        <Tab Title="My Agenda" Icon="tab_agenda.png">
+            <ShellContent
+                Title="Day 1" Icon="gitter.png"
+                ContentTemplate="{DataTemplate pages:AgendaPage}"
+                Route="MyAgendaDay1" />
+            <ShellContent
+                Title="Day 2" Icon="algolia.png"
+                ContentTemplate="{DataTemplate  pages:AgendaPage}"
+                Route="MyAgendaDay2" />
+            <ShellContent
+                Title="Day 3" Icon="gg.png"
+                ContentTemplate="{DataTemplate  pages:AgendaPage}"
+                Route="MyAgendaDay3" />
+        </Tab>
+        <Tab Title="Sponsors" Icon="python.png">
+            <ShellContent
+                Title="Sponsors" Icon="python.png"
+                ContentTemplate="{DataTemplate pages:SponsorsPage}"
+                Route="Sponsors" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="All Settings" Icon="gear_settings_icon.png">
+
+        <Tab Title="Settings and Conponent Selection" Icon="settings.png">
+            <ShellContent
+                Title="Components" Icon="globe_solid.png"
+                ContentTemplate="{DataTemplate pages:ComponentsPage}"
+                Route="ComponentsPage" />
+            <ShellContent
+                Title="Settings" Icon="settings_icon.png"
+                ContentTemplate="{DataTemplate pages:SettingsPage}"
+                Route="SettingsPage" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Single Component" Icon="vial_solid.png">
+
+        <Tab Title="Single P/T" Icon="vial_solid.png">
+            <ShellContent
+                Title="Plots" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:SingleComp1Page}"
+                Route="SingleComp1Page" />
+            <ShellContent
+                Title="Plot Data" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:SingleComp2Page}"
+                Route="SingleComp2Page" />
+            <ShellContent
+                Title="All Data" Icon="fulcrum.png"
+                ContentTemplate="{DataTemplate pages:SingleComp3Page}"
+                Route="SingleComp3Page" />
+        </Tab>
+        <Tab Title="Single T/Vol" Icon="bars_staggered_solid.png">
+            <ShellContent
+                Title="Plots" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:SingleTVol1Page}"
+                Route="SingleTVol1Page" />
+            <ShellContent
+                Title="Plot Data" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:SingleTVol2Page}"
+                Route="SingleTVol2Page" />
+            <ShellContent
+                Title="Calculations" Icon="fulcrum.png"
+                ContentTemplate="{DataTemplate pages:SingleTVol3Page}"
+                Route="SingleTVol3Page" />
+        </Tab>
+        <Tab Title="Single P/Vol" Icon="gopuram_solid.png">
+            <ShellContent
+                Title="Plots" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:SinglePVol1Page}"
+                Route="SinglePVol1Page" />
+            <ShellContent
+                Title="Plot Data" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:SinglePVol2Page}"
+                Route="SinglePVol2Page" />
+            <ShellContent
+                Title="Calculations" Icon="fulcrum.png"
+                ContentTemplate="{DataTemplate pages:SinglePVol3Page}"
+                Route="SinglePVol3Page" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Binary Components" Icon="grip_lines_vertical_solid.png">
+
+        <Tab Title="Binary P/T" Icon="affiliatetheme.png">
+            <ShellContent
+                Title="Bin Temp" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:BinaryCalcs1Page}"
+                Route="BinaryCalcs1Page" />
+            <ShellContent
+                Title="Bin Pres" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:BinaryCalcs2Page}"
+                Route="BinaryCalcs2Page" />
+            <ShellContent
+                Title="Mult Temp" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:BinaryCalcs3Page}"
+                Route="BinaryCalcs3Page" />
+            <ShellContent
+                Title="Mult Pres" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:BinaryCalcs4Page}"
+                Route="BinaryCalcs4Page" />
+        </Tab>
+        <Tab Title="McCabe_Thiele" Icon="servicestack.png">
+            <ShellContent
+                Title="McCabeTh Auto" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:BinMcCabe1Page}"
+                Route="BinMcCabe1Page" />
+            <ShellContent
+                Title="McCabeTh Eqn" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:BinMcCabe2Page}"
+                Route="BinMcCabe2Page" />
+            <ShellContent
+                Title="McCabeTh Man" Icon="fulcrum.png"
+                ContentTemplate="{DataTemplate pages:BinMcCabe3Page}"
+                Route="BinMcCabe3Page" />
+        </Tab>
+        <Tab Title="Activity Coeff Models" Icon="vuejs.png">
+            <ShellContent
+                Title="WILSON" Icon="vial_virus_solid.png"
+                ContentTemplate="{DataTemplate pages:BinActModel1Page}"
+                Route="BinActModel1Page" />
+            <ShellContent
+                Title="NRTL" Icon="biohazard_solid.png"
+                ContentTemplate="{DataTemplate pages:BinActModel2Page}"
+                Route="BinActModel2Page" />
+            <ShellContent
+                Title="UNIQUAC" Icon="fulcrum.png"
+                ContentTemplate="{DataTemplate pages:BinActModel3Page}"
+                Route="BinActModel3Page" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Vapor-Liquid Equil Flash" Icon="flask_solid.png">
+
+        <Tab Title="VLE Flash" Icon="flask_solid.png">
+            <ShellContent
+                Title="Flash 1" Icon="pix.png"
+                ContentTemplate="{DataTemplate pages:VLEFlash1Page}"
+                Route="VLEFlash1Page" />
+            <ShellContent
+                Title="Flash 2" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLEFlash2Page}"
+                Route="VLEFlash2Page" />
+            <ShellContent
+                Title="Flash 3" Icon="gem_solid.png"
+                ContentTemplate="{DataTemplate  pages:VLEFlash3Page}"
+                Route="VLEFlash3Page" />
+        </Tab>
+
+        <Tab Title="Sponsors" Icon="ubuntu.png">
+            <ShellContent
+                Title="Sponsors" Icon="trello.png"
+                ContentTemplate="{DataTemplate pages:SponsorsPage}"
+                Route="Sponsors" />
+            <ShellContent
+                Title="Sponsors" Icon="vine.png"
+                ContentTemplate="{DataTemplate pages:SponsorsPage}"
+                Route="Sponsors" />
+        </Tab>
+
+        <Tab Title="VLE xiyi" Icon="servicestack.png">
+            <ShellContent
+                Title="xiyi 1" Icon="deviantart.png"
+                ContentTemplate="{DataTemplate pages:VLExiyi1Page}"
+                Route="VLExiyi1Page" />
+            <ShellContent
+                Title="xiyi 2" Icon="bolt_solid.png"
+                ContentTemplate="{DataTemplate  pages:VLExiyi2Page}"
+                Route="VLExiyi2Page" />
+            <ShellContent
+                Title="xiyi 3" Icon="bell_solid.png"
+                ContentTemplate="{DataTemplate  pages:VLExiyi3Page}"
+                Route="VLExiyi3Page" />
+        </Tab>
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Vapor-Liquid Equil Tie-Lines" Icon="flask_vial_old.png">
+
+        <Tab Title="Tie-Lines Sys1" Icon="flask_vial_old.png">
+            <ShellContent
+                Title="Sing T" Icon="bezier_curve_solid.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesSingT1Page}"
+                Route="VLETieLinesSingT1Page" />
+            <ShellContent
+                Title="Sing P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesSingP1Page}"
+                Route="VLETieLinesSingP1Page" />
+            <ShellContent
+                Title="Mult T" Icon="ubuntu.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesMultT1Page}"
+                Route="VLETieLinesMultT1Page" />
+            <ShellContent
+                Title="Mult P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesMultP1Page}"
+                Route="VLETieLinesMultP1Page" />
+        </Tab>
+
+        <Tab Title="Tie-Lines Sys2" Icon="python.png">
+            <ShellContent
+                Title="Sing T" Icon="ubuntu.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesSingT2Page}"
+                Route="VLETieLinesSingT2Page" />
+            <ShellContent
+                Title="Sing P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesSingP2Page}"
+                Route="VLETieLinesSingP2Page" />
+            <ShellContent
+                Title="Mult T" Icon="ubuntu.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesMultT2Page}"
+                Route="VLETieLinesMultT2Page" />
+            <ShellContent
+                Title="Mult P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesMultP2Page}"
+                Route="VLETieLinesMultP2Page" />
+        </Tab>
+
+        <Tab Title="Tie-Lines Sys3" Icon="gopuram_solid.png">
+            <ShellContent
+                Title="Sing T" Icon="ubuntu.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesSingT3Page}"
+                Route="VLETieLinesSingT3Page" />
+            <ShellContent
+                Title="Sing P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesSingP3Page}"
+                Route="VLETieLinesSingP3Page" />
+            <ShellContent
+                Title="Mult T" Icon="ubuntu.png"
+                ContentTemplate="{DataTemplate pages:VLETieLinesMultT3Page}"
+                Route="VLETieLinesMultT3Page" />
+            <ShellContent
+                Title="Mult P" Icon="rebel.png"
+                ContentTemplate="{DataTemplate  pages:VLETieLinesMultP3Page}"
+                Route="VLETieLinesMultP3Page" />
+        </Tab>
+
+    </FlyoutItem>
+
+
+</Shell>
