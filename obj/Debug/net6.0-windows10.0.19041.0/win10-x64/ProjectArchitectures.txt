@@ -1,0 +1,1 @@
+C:\Users\oaeju\Documents\MAUI\app-myconference-master\MyConference\MyConference.csproj;x64

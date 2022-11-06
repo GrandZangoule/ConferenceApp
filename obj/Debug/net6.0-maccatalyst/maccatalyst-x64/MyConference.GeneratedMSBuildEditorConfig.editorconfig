@@ -1,0 +1,142 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyConference
+build_property.ProjectDir = C:\Users\oaeju\Documents\MAUI\app-myconference-master\MyConference\
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/AgendaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.AgendaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AgendaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AgendaPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/BinActModelPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.BinActModelPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BinActModelPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BinActModelPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/BinaryCalcsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.BinaryCalcsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BinaryCalcsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BinaryCalcsPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/BinMcCabePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.BinMcCabePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BinMcCabePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BinMcCabePage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/ComponentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.ComponentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ComponentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ComponentsPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/ComponentsPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.ComponentsPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ComponentsPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ComponentsPage2.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SchedulePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SchedulePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SchedulePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SchedulePage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SettingsPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SingleCompPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SingleCompPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SingleCompPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SingleCompPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SinglePVolPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SinglePVolPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SinglePVolPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SinglePVolPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SingleTVolPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SingleTVolPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SingleTVolPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SingleTVolPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/SponsorsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.SponsorsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SponsorsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SponsorsPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLEFlashPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLEFlashPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLEFlashPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLEFlashPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLETieLinesMultPPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLETieLinesMultPPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLETieLinesMultPPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLETieLinesMultPPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLETieLinesMultTPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLETieLinesMultTPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLETieLinesMultTPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLETieLinesMultTPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLETieLinesSingPPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLETieLinesSingPPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLETieLinesSingPPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLETieLinesSingPPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLETieLinesSingTPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLETieLinesSingTPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLETieLinesSingTPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLETieLinesSingTPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Pages/VLExiyiPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Pages.VLExiyiPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\VLExiyiPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\VLExiyiPage.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/oaeju/Documents/MAUI/app-myconference-master/MyConference/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyConference.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
